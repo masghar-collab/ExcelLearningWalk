@@ -1,1008 +1,117 @@
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Learning Walk Notes</title>
+<meta name="theme-color" content="#0ea5e9" />
 <style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:"Apple Color Emoji";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Calibri",sans-serif;}
-.MsoChpDefault
-	{font-family:"Calibri",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
+:root{--bg:#f7f7fb;--card:#ffffff;--ink:#0b1220;--muted:#6b7280;--brand:#0ea5e9;--ok:#16a34a;--warn:#f59e0b;--danger:#ef4444}
+body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+.wrap{max-width:960px;margin:0 auto;padding:20px}
+.card{background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(2,8,20,.06);padding:18px;margin-bottom:14px}
+h1{font-size:1.4rem;margin:4px 0 14px}
+.row{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:800px){.row.two{grid-template-columns:1fr 1fr}.row.three{grid-template-columns:repeat(3,1fr)}}
+label{font-size:.9rem;color:var(--muted);margin-bottom:6px;display:block}
+input,select,textarea{width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:12px;font-size:1rem}
+textarea{min-height:120px}
+.btn{background:var(--brand);color:white;padding:12px;border-radius:12px;font-weight:600;text-decoration:none;cursor:pointer;border:none;display:inline-block;margin-right:6px;margin-top:6px}
+.btn.secondary{background:#e9e9ec;color:#111}
+.btn.warn{background:var(--warn)}
+.btn.success{background:var(--ok)}
+table{width:100%;border-spacing:0 8px}
+td,th{padding:10px;background:#fff;border:1px solid #eee;border-radius:8px;font-size:.9rem}
+ul{padding-left:0;margin:6px 0}
+ul li{list-style:none;margin-bottom:6px}
 </style>
-
 </head>
-
-<body lang=EN-GB style='word-wrap:break-word'>
-
-<div class=WordSection1>
-
-<p class=MsoNormal>&lt;!doctype html&gt;</p>
-
-<p class=MsoNormal>&lt;html lang=&quot;en&quot;&gt;</p>
-
-<p class=MsoNormal>&lt;head&gt;</p>
-
-<p class=MsoNormal>  &lt;meta charset=&quot;utf-8&quot; /&gt;</p>
-
-<p class=MsoNormal>  &lt;meta name=&quot;viewport&quot;
-content=&quot;width=device-width, initial-scale=1&quot; /&gt;</p>
-
-<p class=MsoNormal>  &lt;title&gt;Learning Walk Notes&lt;/title&gt;</p>
-
-<p class=MsoNormal>  &lt;meta name=&quot;theme-color&quot;
-content=&quot;#0ea5e9&quot; /&gt;</p>
-
-<p class=MsoNormal>  &lt;style&gt;</p>
-
-<p class=MsoNormal>   
-:root{--bg:#f7f7fb;--card:#ffffff;--ink:#0b1220;--muted:#6b7280;--brand:#0ea5e9;--ok:#16a34a;--warn:#f59e0b;--danger:#ef4444}</p>
-
-<p class=MsoNormal>    html,body{height:100%}</p>
-
-<p class=MsoNormal>   
-body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe
-UI,Roboto,Inter,Arial,sans-serif;color:var(--ink)}</p>
-
-<p class=MsoNormal>    .wrap{max-width:960px;margin:0 auto;padding:20px}</p>
-
-<p class=MsoNormal>   
-.card{background:var(--card);border-radius:18px;box-shadow:0 10px 30px
-rgba(2,8,20,.06);padding:18px}</p>
-
-<p class=MsoNormal>    h1{font-size:1.4rem;margin:4px 0 14px}</p>
-
-<p class=MsoNormal>    .row{display:grid;grid-template-columns:1fr;gap:12px}</p>
-
-<p class=MsoNormal>   
-@media(min-width:800px){.row.two{grid-template-columns:1fr
-1fr}.row.three{grid-template-columns:repeat(3,1fr)}}</p>
-
-<p class=MsoNormal>   
-label{display:block;font-size:.9rem;color:var(--muted);margin-bottom:6px}</p>
-
-<p class=MsoNormal>    input,select,textarea{width:100%;padding:12px
-12px;border:1px solid
-#e5e7eb;border-radius:12px;background:#fff;font-size:1rem}</p>
-
-<p class=MsoNormal>    textarea{min-height:120px;resize:vertical}</p>
-
-<p class=MsoNormal>   
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}</p>
-
-<p class=MsoNormal>   
-button,.btn{appearance:none;border:0;background:var(--brand);color:white;padding:12px
-14px;border-radius:12px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}</p>
-
-<p class=MsoNormal>   
-.btn.secondary{background:#1118270f;color:#0b1220;border:1px solid #e5e7eb}</p>
-
-<p class=MsoNormal>    .btn.success{background:var(--ok)}</p>
-
-<p class=MsoNormal>    .btn.warn{background:var(--warn)}</p>
-
-<p class=MsoNormal>    .btn.danger{background:var(--danger)}</p>
-
-<p class=MsoNormal>   
-.tiny{font-size:.85rem;color:var(--muted);margin-top:10px}</p>
-
-<p class=MsoNormal>    .pill{font-size:.75rem;padding:4px
-8px;border-radius:999px;background:#e0f2fe;color:#075985;display:inline-block}</p>
-
-<p class=MsoNormal>   
-.footer{margin-top:18px;color:var(--muted);font-size:.85rem}</p>
-
-<p class=MsoNormal>   
-.hdr{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}</p>
-
-<p class=MsoNormal>   
-table{width:100%;border-collapse:separate;border-spacing:0 8px}</p>
-
-<p class=MsoNormal>    th{font-size:.85rem;color:var(--muted);text-align:left}</p>
-
-<p class=MsoNormal>    td{background:#fff;padding:10px;border-top:1px solid
-#eee;border-bottom:1px solid #eee}</p>
-
-<p class=MsoNormal>    tr td:first-child{border-left:1px solid
-#eee;border-radius:12px 0 0 12px}</p>
-
-<p class=MsoNormal>    tr td:last-child{border-right:1px solid
-#eee;border-radius:0 12px 12px 0}</p>
-
-<p class=MsoNormal>    .taglist{display:flex;flex-wrap:wrap;gap:8px}</p>
-
-<p class=MsoNormal>   
-.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid
-#e5e7eb;border-radius:999px;padding:6px 10px;background:#fff;cursor:pointer}</p>
-
-<p class=MsoNormal>    .chip input{accent-color:var(--brand)}</p>
-
-<p class=MsoNormal>  &lt;/style&gt;</p>
-
-<p class=MsoNormal>&lt;/head&gt;</p>
-
-<p class=MsoNormal>&lt;body&gt;</p>
-
-<p class=MsoNormal>  &lt;div class=&quot;wrap&quot;&gt;</p>
-
-<p class=MsoNormal>    &lt;div class=&quot;hdr&quot;&gt;</p>
-
-<p class=MsoNormal>      &lt;h1&gt;Learning Walk — Quick Notes&lt;/h1&gt;</p>
-
-<p class=MsoNormal>      &lt;span class=&quot;pill&quot;&gt;Add to Home Screen
-for fast access&lt;/span&gt;</p>
-
-<p class=MsoNormal>    &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    &lt;div class=&quot;card&quot;
-id=&quot;formCard&quot;&gt;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;row three&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;dt&quot;&gt;Date &amp;
-Time&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input type=&quot;datetime-local&quot;
-id=&quot;dt&quot; /&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;year&quot;&gt;Year
-Group&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;select id=&quot;year&quot;&gt;</p>
-
-<p class=MsoNormal>            &lt;option
-value=&quot;Y7&quot;&gt;Y7&lt;/option&gt;</p>
-
-<p class=MsoNormal>            &lt;option
-value=&quot;Y8&quot;&gt;Y8&lt;/option&gt;</p>
-
-<p class=MsoNormal>            &lt;option
-value=&quot;Y9&quot;&gt;Y9&lt;/option&gt;</p>
-
-<p class=MsoNormal>            &lt;option
-value=&quot;Y10&quot;&gt;Y10&lt;/option&gt;</p>
-
-<p class=MsoNormal>            &lt;option value=&quot;Y11&quot;
-selected&gt;Y11&lt;/option&gt;</p>
-
-<p class=MsoNormal>          &lt;/select&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;teacher&quot;&gt;Class
-Teacher&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;teacher&quot;
-placeholder=&quot;e.g., Ms Ahmed&quot; /&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;row three&quot;
-style=&quot;margin-top:12px&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label
-for=&quot;subject&quot;&gt;Subject&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;subject&quot;
-placeholder=&quot;e.g., Business&quot; /&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;classSet&quot;&gt;Class /
-Set&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;classSet&quot;
-placeholder=&quot;e.g., 11B/Bus1&quot; /&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label
-for=&quot;room&quot;&gt;Room&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;room&quot;
-placeholder=&quot;e.g., B12&quot; /&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;row three&quot;
-style=&quot;margin-top:12px&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;period&quot;&gt;Lesson /
-Period&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;period&quot;
-placeholder=&quot;e.g., P3&quot; /&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;behaviour&quot;&gt;Behaviour
-(1–5)&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;behaviour&quot;
-type=&quot;number&quot; min=&quot;1&quot; max=&quot;5&quot; step=&quot;1&quot;
-/&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;engagement&quot;&gt;Engagement
-(1–5)&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;engagement&quot;
-type=&quot;number&quot; min=&quot;1&quot; max=&quot;5&quot; step=&quot;1&quot;
-/&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div style=&quot;margin-top:12px&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;label&gt;Quick ticks&lt;/label&gt;</p>
-
-<p class=MsoNormal>        &lt;div class=&quot;taglist&quot;&gt;</p>
-
-<p class=MsoNormal>          &lt;label class=&quot;chip&quot;&gt;&lt;input
-type=&quot;checkbox&quot; id=&quot;tick_lo&quot;/&gt; LO visible&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;label class=&quot;chip&quot;&gt;&lt;input
-type=&quot;checkbox&quot; id=&quot;tick_retrieval&quot;/&gt; Retrieval
-starter&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;label class=&quot;chip&quot;&gt;&lt;input
-type=&quot;checkbox&quot; id=&quot;tick_questioning&quot;/&gt; Effective
-questioning&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;label class=&quot;chip&quot;&gt;&lt;input
-type=&quot;checkbox&quot; id=&quot;tick_afl&quot;/&gt; AFL checks&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;label class=&quot;chip&quot;&gt;&lt;input
-type=&quot;checkbox&quot; id=&quot;tick_send&quot;/&gt; SEND
-scaffolds&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;label class=&quot;chip&quot;&gt;&lt;input
-type=&quot;checkbox&quot; id=&quot;tick_literacy&quot;/&gt; Literacy
-focus&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;label class=&quot;chip&quot;&gt;&lt;input
-type=&quot;checkbox&quot; id=&quot;tick_homework&quot;/&gt; Homework
-set&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;label class=&quot;chip&quot;&gt;&lt;input
-type=&quot;checkbox&quot; id=&quot;tick_routines&quot;/&gt; Strong
-routines&lt;/label&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;row&quot;
-style=&quot;margin-top:12px&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;notes&quot;&gt;Observation
-Notes&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;textarea id=&quot;notes&quot;
-placeholder=&quot;Behaviour, explanations, checks for understanding, routines,
-challenge, questioning, SEND scaffolds, literacy, climate for learning,
-etc.&quot;&gt;&lt;/textarea&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;row two&quot;
-style=&quot;margin-top:12px&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label
-for=&quot;strengths&quot;&gt;Strengths&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;textarea id=&quot;strengths&quot;
-placeholder=&quot;What went well?&quot;&gt;&lt;/textarea&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;areas&quot;&gt;Areas for
-Development&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;textarea id=&quot;areas&quot;
-placeholder=&quot;Even better if…&quot;&gt;&lt;/textarea&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;row&quot;
-style=&quot;margin-top:12px&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;actions&quot;&gt;Actions /
-Next Steps&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;textarea id=&quot;actions&quot;
-placeholder=&quot;Follow-up, coaching, support, revisit
-date&quot;&gt;&lt;/textarea&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;row two&quot;
-style=&quot;margin-top:12px&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label for=&quot;email&quot;&gt;Send to
-(Outlook)&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;email&quot;
-type=&quot;email&quot; placeholder=&quot;colleague@school.org&quot; /&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>        &lt;div&gt;</p>
-
-<p class=MsoNormal>          &lt;label&gt;&amp;nbsp;&lt;/label&gt;</p>
-
-<p class=MsoNormal>          &lt;a id=&quot;mailtoBtn&quot;
-class=&quot;btn&quot; href=&quot;#&quot;&gt;<span style='font-family:"Apple Color Emoji"'>&#128231;</span>
-Compose in Outlook&lt;/a&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;actions&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;button class=&quot;btn success&quot;
-id=&quot;saveEntryBtn&quot;&gt;<span style='font-family:"Apple Color Emoji"'>&#128190;</span>
-Save entry&lt;/button&gt;</p>
-
-<p class=MsoNormal>        &lt;button class=&quot;btn secondary&quot;
-id=&quot;newEntryBtn&quot;&gt;<span style='font-family:"Apple Color Emoji"'>✨</span>
-New&lt;/button&gt;</p>
-
-<p class=MsoNormal>        &lt;button class=&quot;btn&quot;
-id=&quot;copyBtn&quot;&gt;<span style='font-family:"Apple Color Emoji"'>&#128203;</span>
-Copy summary&lt;/button&gt;</p>
-
-<p class=MsoNormal>        &lt;button class=&quot;btn warn&quot;
-id=&quot;clearBtn&quot;&gt;<span style='font-family:"Apple Color Emoji"'>&#128465;️</span>
-Clear form&lt;/button&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;tiny&quot;&gt;Entries are stored
-on this device only (no server). Works offline once loaded.&lt;/div&gt;</p>
-
-<p class=MsoNormal>    &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    &lt;div style=&quot;height:14px&quot;&gt;&lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    &lt;div class=&quot;card&quot;
-id=&quot;listCard&quot;&gt;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;hdr&quot;
-style=&quot;margin-bottom:8px&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;h2
-style=&quot;margin:0;font-size:1.1rem&quot;&gt;Past Learning Walks&lt;/h2&gt;</p>
-
-<p class=MsoNormal>        &lt;div class=&quot;actions&quot;
-style=&quot;margin:0&quot;&gt;</p>
-
-<p class=MsoNormal>          &lt;input id=&quot;search&quot;
-placeholder=&quot;Search teacher / subject / notes…&quot;
-style=&quot;min-width:240px&quot; /&gt;</p>
-
-<p class=MsoNormal>          &lt;button class=&quot;btn secondary&quot;
-id=&quot;exportCsvBtn&quot;&gt;<span style='font-family:"Apple Color Emoji"'>⬇️</span>
-Export CSV&lt;/button&gt;</p>
-
-<p class=MsoNormal>        &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;div class=&quot;tiny&quot;&gt;Tap **View/Edit** to
-load an entry back into the form.&lt;/div&gt;</p>
-
-<p class=MsoNormal>      &lt;div style=&quot;overflow:auto&quot;&gt;</p>
-
-<p class=MsoNormal>        &lt;table id=&quot;tbl&quot;&gt;</p>
-
-<p class=MsoNormal>          &lt;thead&gt;</p>
-
-<p class=MsoNormal>            &lt;tr&gt;</p>
-
-<p class=MsoNormal>              &lt;th&gt;Date&lt;/th&gt;</p>
-
-<p class=MsoNormal>              &lt;th&gt;Year&lt;/th&gt;</p>
-
-<p class=MsoNormal>              &lt;th&gt;Teacher&lt;/th&gt;</p>
-
-<p class=MsoNormal>              &lt;th&gt;Subject&lt;/th&gt;</p>
-
-<p class=MsoNormal>              &lt;th&gt;Room&lt;/th&gt;</p>
-
-<p class=MsoNormal>              &lt;th&gt;Summary&lt;/th&gt;</p>
-
-<p class=MsoNormal>              &lt;th&gt;Actions&lt;/th&gt;</p>
-
-<p class=MsoNormal>            &lt;/tr&gt;</p>
-
-<p class=MsoNormal>          &lt;/thead&gt;</p>
-
-<p class=MsoNormal>          &lt;tbody id=&quot;tbody&quot;&gt;&lt;/tbody&gt;</p>
-
-<p class=MsoNormal>        &lt;/table&gt;</p>
-
-<p class=MsoNormal>      &lt;/div&gt;</p>
-
-<p class=MsoNormal>    &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    &lt;div class=&quot;footer&quot;&gt;Made for quick
-learning walks · Data stays on your device.&lt;/div&gt;</p>
-
-<p class=MsoNormal>  &lt;/div&gt;</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>  &lt;script&gt;</p>
-
-<p class=MsoNormal>    // ========== Utilities ==========</p>
-
-<p class=MsoNormal>    const $ = (id) =&gt; document.getElementById(id);</p>
-
-<p class=MsoNormal>    const FIELDS =
-['dt','year','teacher','subject','classSet','room','period','behaviour','engagement','notes','strengths','areas','actions','email','tick_lo','tick_retrieval','tick_questioning','tick_afl','tick_send','tick_literacy','tick_homework','tick_routines'];</p>
-
-<p class=MsoNormal>    let CURRENT_ID = null; // null =&gt; new entry</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function toLocalISOString(dt){</p>
-
-<p class=MsoNormal>      const pad=(n)=&gt;String(n).padStart(2,'0');</p>
-
-<p class=MsoNormal>      const y=dt.getFullYear();</p>
-
-<p class=MsoNormal>      const m=pad(dt.getMonth()+1);</p>
-
-<p class=MsoNormal>      const d=pad(dt.getDate());</p>
-
-<p class=MsoNormal>      const h=pad(dt.getHours());</p>
-
-<p class=MsoNormal>      const mi=pad(dt.getMinutes());</p>
-
-<p class=MsoNormal>      return `${y}-${m}-${d}T${h}:${mi}`;</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function getEntries(){</p>
-
-<p class=MsoNormal>      try{ return
-JSON.parse(localStorage.getItem('lw_entries_v1')||'[]'); }catch{return []}</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>    function setEntries(arr){
-localStorage.setItem('lw_entries_v1', JSON.stringify(arr)); }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function loadFormFromLocal(){</p>
-
-<p class=MsoNormal>      const raw = localStorage.getItem('lw_form_v1');</p>
-
-<p class=MsoNormal>      if(!raw){ $('dt').value = toLocalISOString(new
-Date()); return; }</p>
-
-<p class=MsoNormal>      try{</p>
-
-<p class=MsoNormal>        const f = JSON.parse(raw);</p>
-
-<p class=MsoNormal>        for(const k of FIELDS){</p>
-
-<p class=MsoNormal>          const el = $(k); if(!el) continue;</p>
-
-<p class=MsoNormal>          if(el.type==='checkbox'){ el.checked = !!f[k]; }</p>
-
-<p class=MsoNormal>          else if(f[k]!==undefined) el.value = f[k];</p>
-
-<p class=MsoNormal>        }</p>
-
-<p class=MsoNormal>      }catch{}</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>    function saveFormSnapshot(){</p>
-
-<p class=MsoNormal>      const f = {};</p>
-
-<p class=MsoNormal>      for(const k of FIELDS){ const el=$(k); if(!el)
-continue; f[k]= (el.type==='checkbox') ? el.checked : el.value; }</p>
-
-<p class=MsoNormal>      localStorage.setItem('lw_form_v1', JSON.stringify(f));</p>
-
-<p class=MsoNormal>      return f;</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function clearForm(){</p>
-
-<p class=MsoNormal>      CURRENT_ID = null;</p>
-
-<p class=MsoNormal>     
-['teacher','subject','classSet','room','period','behaviour','engagement','notes','strengths','areas','actions'].forEach(k=&gt;$(k).value='');</p>
-
-<p class=MsoNormal>     
-['tick_lo','tick_retrieval','tick_questioning','tick_afl','tick_send','tick_literacy','tick_homework','tick_routines'].forEach(k=&gt;$(k).checked=false);</p>
-
-<p class=MsoNormal>      $('year').value='Y11';</p>
-
-<p class=MsoNormal>      $('dt').value=toLocalISOString(new Date());</p>
-
-<p class=MsoNormal>      saveFormSnapshot();</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function entryFromForm(){</p>
-
-<p class=MsoNormal>      const f = saveFormSnapshot();</p>
-
-<p class=MsoNormal>      return {</p>
-
-<p class=MsoNormal>        id: CURRENT_ID || ('e'+Date.now()),</p>
-
-<p class=MsoNormal>        ...f</p>
-
-<p class=MsoNormal>      };</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function fillForm(e){</p>
-
-<p class=MsoNormal>      CURRENT_ID = e.id;</p>
-
-<p class=MsoNormal>      for(const k of FIELDS){ const el=$(k); if(!el)
-continue; if(el.type==='checkbox') el.checked=!!e[k]; else if(e[k]!==undefined)
-el.value=e[k]; }</p>
-
-<p class=MsoNormal>      saveFormSnapshot();</p>
-
-<p class=MsoNormal>      updateMailto();</p>
-
-<p class=MsoNormal>      window.scrollTo({top:0,behavior:'smooth'});</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function entryToText(e){</p>
-
-<p class=MsoNormal>      const dtNice = e.dt ? new
-Date(e.dt).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'}) :
-'';</p>
-
-<p class=MsoNormal>      const ticks =
-['tick_lo','tick_retrieval','tick_questioning','tick_afl','tick_send','tick_literacy','tick_homework','tick_routines']</p>
-
-<p class=MsoNormal>        .filter(k=&gt;e[k]).map(k=&gt;({tick_lo:'LO
-visible',tick_retrieval:'Retrieval starter',tick_questioning:'Effective
-questioning',tick_afl:'AFL checks',tick_send:'SEND
-scaffolds',tick_literacy:'Literacy focus',tick_homework:'Homework set',tick_routines:'Strong
-routines'})[k]).join(', ');</p>
-
-<p class=MsoNormal>      return [</p>
-
-<p class=MsoNormal>        'Learning Walk Note',</p>
-
-<p class=MsoNormal>        `Date/Time: ${dtNice}`,</p>
-
-<p class=MsoNormal>        `Year Group: ${e.year||''}`,</p>
-
-<p class=MsoNormal>        `Teacher: ${e.teacher||''}`,</p>
-
-<p class=MsoNormal>        `Subject: ${e.subject||''}`,</p>
-
-<p class=MsoNormal>        `Class/Set: ${e.classSet||''}`,</p>
-
-<p class=MsoNormal>        `Room: ${e.room||''}`,</p>
-
-<p class=MsoNormal>        `Lesson/Period: ${e.period||''}`,</p>
-
-<p class=MsoNormal>        `Behaviour: ${e.behaviour||''} /5`,</p>
-
-<p class=MsoNormal>        `Engagement: ${e.engagement||''} /5`,</p>
-
-<p class=MsoNormal>        ticks?`Quick ticks: ${ticks}`:null,</p>
-
-<p class=MsoNormal>        '',</p>
-
-<p class=MsoNormal>        'Observation Notes:',</p>
-
-<p class=MsoNormal>        e.notes||'-',</p>
-
-<p class=MsoNormal>        '',</p>
-
-<p class=MsoNormal>        'Strengths:',</p>
-
-<p class=MsoNormal>        e.strengths||'-',</p>
-
-<p class=MsoNormal>        '',</p>
-
-<p class=MsoNormal>        'Areas for Development:',</p>
-
-<p class=MsoNormal>        e.areas||'-',</p>
-
-<p class=MsoNormal>        '',</p>
-
-<p class=MsoNormal>        'Actions / Next Steps:',</p>
-
-<p class=MsoNormal>        e.actions||'-'</p>
-
-<p class=MsoNormal>      ].filter(Boolean).join('</p>
-
-<p class=MsoNormal>');</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function buildMailtoFor(e){</p>
-
-<p class=MsoNormal>      const subject = `Learning Walk – ${e.year||''} –
-${e.teacher||'Teacher'} – ${e.subject||''} – ${e.dt?new
-Date(e.dt).toLocaleDateString():''}`;</p>
-
-<p class=MsoNormal>      const body = entryToText(e);</p>
-
-<p class=MsoNormal>      const to = e.email || '';</p>
-
-<p class=MsoNormal>      return
-`mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&amp;body=${encodeURIComponent(body)}`;</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function updateMailto(){</p>
-
-<p class=MsoNormal>      const e = entryFromForm();</p>
-
-<p class=MsoNormal>      $('mailtoBtn').setAttribute('href',
-buildMailtoFor(e));</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    async function copySummary(){</p>
-
-<p class=MsoNormal>      const text = entryToText(entryFromForm());</p>
-
-<p class=MsoNormal>      try{ await navigator.clipboard.writeText(text);
-alert('Summary copied to clipboard.'); }</p>
-
-<p class=MsoNormal>      catch(e){ window.prompt('Copy summary:', text); }</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function saveEntry(){</p>
-
-<p class=MsoNormal>      const e = entryFromForm();</p>
-
-<p class=MsoNormal>      const arr = getEntries();</p>
-
-<p class=MsoNormal>      const idx = arr.findIndex(x=&gt;x.id===e.id);</p>
-
-<p class=MsoNormal>      if(idx&gt;=0) arr[idx]=e; else arr.unshift(e);</p>
-
-<p class=MsoNormal>      setEntries(arr);</p>
-
-<p class=MsoNormal>      renderList();</p>
-
-<p class=MsoNormal>      alert(idx&gt;=0? 'Entry updated.' : 'Entry saved.');</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function deleteEntry(id){</p>
-
-<p class=MsoNormal>      if(!confirm('Delete this entry?')) return;</p>
-
-<p class=MsoNormal>      const arr = getEntries().filter(x=&gt;x.id!==id);</p>
-
-<p class=MsoNormal>      setEntries(arr);</p>
-
-<p class=MsoNormal>      if(CURRENT_ID===id) clearForm();</p>
-
-<p class=MsoNormal>      renderList();</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function renderList(){</p>
-
-<p class=MsoNormal>      const q = $('search').value.toLowerCase().trim();</p>
-
-<p class=MsoNormal>      const arr = getEntries().filter(e=&gt;{</p>
-
-<p class=MsoNormal>        if(!q) return true;</p>
-
-<p class=MsoNormal>        const hay =
-[e.teacher,e.subject,e.year,e.room,e.classSet,e.notes,e.strengths,e.areas,e.actions].join('
-').toLowerCase();</p>
-
-<p class=MsoNormal>        return hay.includes(q);</p>
-
-<p class=MsoNormal>      });</p>
-
-<p class=MsoNormal>      const tbody = $('tbody');</p>
-
-<p class=MsoNormal>      tbody.innerHTML = '';</p>
-
-<p class=MsoNormal>      for(const e of arr){</p>
-
-<p class=MsoNormal>        const tr = document.createElement('tr');</p>
-
-<p class=MsoNormal>        const dtShort = e.dt? new
-Date(e.dt).toLocaleString(undefined,{dateStyle:'medium',
-timeStyle:'short'}):'';</p>
-
-<p class=MsoNormal>        const summary = (e.notes||'').slice(0,80) +
-((e.notes||'').length&gt;80?'…':'');</p>
-
-<p class=MsoNormal>        tr.innerHTML = `</p>
-
-<p class=MsoNormal>          &lt;td&gt;${dtShort}&lt;/td&gt;</p>
-
-<p class=MsoNormal>          &lt;td&gt;${e.year||''}&lt;/td&gt;</p>
-
-<p class=MsoNormal>          &lt;td&gt;${e.teacher||''}&lt;/td&gt;</p>
-
-<p class=MsoNormal>          &lt;td&gt;${e.subject||''}&lt;/td&gt;</p>
-
-<p class=MsoNormal>          &lt;td&gt;${e.room||''}&lt;/td&gt;</p>
-
-<p class=MsoNormal>          &lt;td&gt;${summary}&lt;/td&gt;</p>
-
-<p class=MsoNormal>          &lt;td&gt;</p>
-
-<p class=MsoNormal>            &lt;button class=&quot;btn secondary&quot;
-data-act=&quot;view&quot;
-data-id=&quot;${e.id}&quot;&gt;View/Edit&lt;/button&gt;</p>
-
-<p class=MsoNormal>            &lt;a class=&quot;btn&quot;
-href=&quot;${buildMailtoFor(e)}&quot;&gt;Email&lt;/a&gt;</p>
-
-<p class=MsoNormal>            &lt;button class=&quot;btn warn&quot;
-data-act=&quot;copy&quot; data-id=&quot;${e.id}&quot;&gt;Copy&lt;/button&gt;</p>
-
-<p class=MsoNormal>            &lt;button class=&quot;btn danger&quot;
-data-act=&quot;del&quot; data-id=&quot;${e.id}&quot;&gt;Delete&lt;/button&gt;</p>
-
-<p class=MsoNormal>          &lt;/td&gt;`;</p>
-
-<p class=MsoNormal>        tbody.appendChild(tr);</p>
-
-<p class=MsoNormal>      }</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    function exportCsv(){</p>
-
-<p class=MsoNormal>      const arr = getEntries();</p>
-
-<p class=MsoNormal>      const headers =
-['DateTime','Year','Teacher','Subject','ClassSet','Room','Period','Behaviour','Engagement','LO','Retrieval','Questioning','AFL','SEND','Literacy','Homework','Routines','Notes','Strengths','Areas','Actions'];</p>
-
-<p class=MsoNormal>      const rows = arr.map(e=&gt;[</p>
-
-<p class=MsoNormal>       
-e.dt||'',e.year||'',e.teacher||'',e.subject||'',e.classSet||'',e.room||'',e.period||'',e.behaviour||'',e.engagement||'',</p>
-
-<p class=MsoNormal>       
-e.tick_lo?1:0,e.tick_retrieval?1:0,e.tick_questioning?1:0,e.tick_afl?1:0,e.tick_send?1:0,e.tick_literacy?1:0,e.tick_homework?1:0,e.tick_routines?1:0,</p>
-
-<p class=MsoNormal>        (e.notes||'').replace(/</p>
-
-<p class=MsoNormal>/g,' '),(e.strengths||'').replace(/</p>
-
-<p class=MsoNormal>/g,' '),(e.areas||'').replace(/</p>
-
-<p class=MsoNormal>/g,' '),(e.actions||'').replace(/</p>
-
-<p class=MsoNormal>/g,' ')</p>
-
-<p class=MsoNormal>      ]);</p>
-
-<p class=MsoNormal>      const csv = [headers.join(','),
-...rows.map(r=&gt;r.map(v=&gt;`&quot;${String(v).replace(/&quot;/g,'&quot;&quot;')}&quot;`).join(','))].join('</p>
-
-<p class=MsoNormal>');</p>
-
-<p class=MsoNormal>      const blob = new Blob([csv],{type:'text/csv'});</p>
-
-<p class=MsoNormal>      const url = URL.createObjectURL(blob);</p>
-
-<p class=MsoNormal>      const a = document.createElement('a');</p>
-
-<p class=MsoNormal>      a.href=url; a.download='learning-walks.csv';
-a.click();</p>
-
-<p class=MsoNormal>      URL.revokeObjectURL(url);</p>
-
-<p class=MsoNormal>    }</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    // ===== Event bindings =====</p>
-
-<p class=MsoNormal>    FIELDS.forEach(id=&gt;{ const el=$(id); if(!el) return;
-el.addEventListener('input', ()=&gt;{ saveFormSnapshot(); updateMailto(); });
-});</p>
-
-<p class=MsoNormal>    $('copyBtn').addEventListener('click', copySummary);</p>
-
-<p class=MsoNormal>    $('clearBtn').addEventListener('click', ()=&gt;{
-if(confirm('Clear the form?')){ clearForm(); updateMailto(); }});</p>
-
-<p class=MsoNormal>    $('mailtoBtn').addEventListener('click', ()=&gt;{
-updateMailto(); });</p>
-
-<p class=MsoNormal>    $('saveEntryBtn').addEventListener('click', saveEntry);</p>
-
-<p class=MsoNormal>    $('newEntryBtn').addEventListener('click', ()=&gt;{
-clearForm(); alert('New entry started.'); });</p>
-
-<p class=MsoNormal>    $('search').addEventListener('input', renderList);</p>
-
-<p class=MsoNormal>    $('exportCsvBtn').addEventListener('click', exportCsv);</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    $('tbody').addEventListener('click', (e)=&gt;{</p>
-
-<p class=MsoNormal>      const btn = e.target.closest('button'); if(!btn)
-return;</p>
-
-<p class=MsoNormal>      const id = btn.getAttribute('data-id');</p>
-
-<p class=MsoNormal>      const act = btn.getAttribute('data-act');</p>
-
-<p class=MsoNormal>      const list = getEntries();</p>
-
-<p class=MsoNormal>      const entry = list.find(x=&gt;x.id===id);</p>
-
-<p class=MsoNormal>      if(!entry) return;</p>
-
-<p class=MsoNormal>      if(act==='view') fillForm(entry);</p>
-
-<p class=MsoNormal>      else if(act==='del') deleteEntry(id);</p>
-
-<p class=MsoNormal>      else if(act==='copy') { const text=entryToText(entry);
-navigator.clipboard.writeText(text).then(()=&gt;alert('Copied.')); }</p>
-
-<p class=MsoNormal>    });</p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=MsoNormal>    // ===== Init =====</p>
-
-<p class=MsoNormal>    loadFormFromLocal();</p>
-
-<p class=MsoNormal>    if(!$('dt').value) $('dt').value = toLocalISOString(new
-Date());</p>
-
-<p class=MsoNormal>    updateMailto();</p>
-
-<p class=MsoNormal>    renderList();</p>
-
-<p class=MsoNormal>  &lt;/script&gt;</p>
-
-<p class=MsoNormal>&lt;/body&gt;</p>
-
-<p class=MsoNormal>&lt;/html&gt;</p>
+<body>
+<div class="wrap">
+<h1>Learning Walk — Quick Notes</h1>
+
+<div class="card">
+<div class="row three">
+<div><label>Date & Time</label><input type="datetime-local" id="dt" /></div>
+<div><label>Year Group</label>
+<select id="year"><option>Y7</option><option>Y8</option><option>Y9</option><option>Y10</option><option selected>Y11</option></select>
+</div>
+<div><label>Teacher</label><input id="teacher" /></div>
+</div>
+
+<div class="row three">
+<div><label>Subject</label><input id="subject" /></div>
+<div><label>Class / Set</label><input id="classSet" /></div>
+<div><label>Room</label><input id="room" /></div>
+</div>
+
+<div class="row three">
+<div><label>Period</label><input id="period"></div>
+<div><label>Behaviour (1–5)</label><input id="behaviour" type="number" min="1" max="5"></div>
+<div><label>Engagement (1–5)</label><input id="engagement" type="number" min="1" max="5"></div>
+</div>
+
+<label>Quick ticks</label>
+<ul>
+<li><label><input type="checkbox" id="tick_lo"> LO visible</label></li>
+<li><label><input type="checkbox" id="tick_retrieval"> Retrieval starter</label></li>
+<li><label><input type="checkbox" id="tick_questioning"> Effective questioning</label></li>
+<li><label><input type="checkbox" id="tick_afl"> AFL checks</label></li>
+<li><label><input type="checkbox" id="tick_send"> SEND scaffolds</label></li>
+<li><label><input type="checkbox" id="tick_literacy"> Literacy focus</label></li>
+<li><label><input type="checkbox" id="tick_homework"> Homework set</label></li>
+<li><label><input type="checkbox" id="tick_routines"> Strong routines</label></li>
+</ul>
+
+<label>Observation Notes</label><textarea id="notes"></textarea>
+<label>Strengths</label><textarea id="strengths"></textarea>
+<label>Areas for Development</label><textarea id="areas"></textarea>
+<label>Actions / Next Steps</label><textarea id="actions"></textarea>
+
+<label>Send to (Outlook)</label><input id="email" placeholder="name@school.org">
+
+<button class="btn success" id="saveEntryBtn">Save entry</button>
+<button class="btn secondary" id="newEntryBtn">New</button>
+<button class="btn" id="copyBtn">Copy</button>
+<button class="btn warn" id="clearBtn">Clear</button>
+<a class="btn" id="mailtoBtn">Email</a>
+</div>
+
+<div class="card">
+<input id="search" placeholder="Search..." style="width:100%;padding:8px;margin-bottom:8px">
+<button class="btn secondary" id="exportCsvBtn">Export CSV</button>
+<table>
+<thead><tr><th>Date</th><th>Teacher</th><th>Actions</th></tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
 
 </div>
 
-</body>
+<script>
+const $=id=>document.getElementById(id);
+const fields=['dt','year','teacher','subject','classSet','room','period','behaviour','engagement','notes','strengths','areas','actions','email','tick_lo','tick_retrieval','tick_questioning','tick_afl','tick_send','tick_literacy','tick_homework','tick_routines'];
+let CURRENT_ID=null;
 
+function load(){try{let f=JSON.parse(localStorage.form||"{}");fields.forEach(k=>{let el=$(k);if(el){if(el.type=="checkbox")el.checked=!!f[k];else if(f[k])el.value=f[k];}});}catch{} if(!$('dt').value)$('dt').value=new Date().toISOString().slice(0,16);}
+function saveSnap(){let f={};fields.forEach(k=>{let el=$(k);if(el)f[k]=(el.type=="checkbox"?el.checked:el.value)});localStorage.form=JSON.stringify(f);return f;}
+function entry(){let f=saveSnap();return{id:CURRENT_ID||("e"+Date.now()),...f};}
+function list(){return JSON.parse(localStorage.list||"[]");}
+function store(a){localStorage.list=JSON.stringify(a);}
+function render(){let q=$('search').value.toLowerCase();let a=list().filter(e=>e.teacher?.toLowerCase().includes(q)||e.subject?.toLowerCase().includes(q)||e.notes?.toLowerCase().includes(q));$('tbody').innerHTML=a.map(e=>`<tr><td>${e.dt||""}</td><td>${e.teacher||""}</td><td><button onclick='edit("${e.id}")'>View</button> <button onclick='del("${e.id}")'>X</button></td></tr>`).join("");}
+function edit(id){let e=list().find(x=>x.id==id);CURRENT_ID=id;fields.forEach(k=>{let el=$(k);if(el){if(el.type=="checkbox")el.checked=!!e[k];else el.value=e[k]||"";}});saveSnap();window.scrollTo(0,0);}
+function del(id){store(list().filter(x=>x.id!=id));render();}
+
+$('saveEntryBtn').onclick=()=>{let e=entry(),a=list();let i=a.findIndex(x=>x.id==e.id);if(i>=0)a[i]=e;else a.unshift(e);store(a);alert("Saved");render();};
+$('newEntryBtn').onclick=()=>{CURRENT_ID=null;localStorage.removeItem("form");location.reload()};
+$('clearBtn').onclick=()=>{if(confirm("Clear?")){CURRENT_ID=null;localStorage.removeItem("form");location.reload()}};
+$('copyBtn').onclick=()=>{navigator.clipboard.writeText(JSON.stringify(entry(),null,2));alert("Copied")};
+$('search').oninput=render;
+$('exportCsvBtn').onclick=()=>{let csv="";let a=list();a.forEach(e=>{csv+=Object.values(e).join(",") + "\n"});let b=new Blob([csv]);let u=URL.createObjectURL(b);let d=document.createElement("a");d.href=u;d.download="walks.csv";d.click()};
+$('mailtoBtn').onclick=()=>{let e=entry();let body=encodeURIComponent(JSON.stringify(e,null,2));location.href=`mailto:${e.email}?subject=Learning Walk&body=${body}`};
+
+load();render();
+</script>
+
+</body>
 </html>
